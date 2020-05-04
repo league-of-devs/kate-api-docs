@@ -58,6 +58,7 @@
 	$sidebar.= addLink("<div class=\"badge orange menu\">POST</div>/user/sync_with_platform","/user/sync_with_platform");
 	$sidebar.= addLink("<div class=\"badge red menu\">DELETE</div>/user/remove_sync","/user/remove_sync");
 	$sidebar.= addLink("<div class=\"badge orange menu\">POST</div>/user/login","/user/login");
+	$sidebar.= addLink("<div class=\"badge orange menu\">POST</div>/user/logout","/user/logout");
 	$sidebar.= addLink("<div class=\"badge orange menu\">POST</div>/user/register","/user/register");
 	$sidebar.= addLink("<div class=\"badge orange menu\">POST</div>/user/reset_api_tokens","/user/reset_api_tokens");
 
