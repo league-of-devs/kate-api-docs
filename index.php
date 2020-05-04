@@ -37,7 +37,7 @@
 	}
 
 	//Páginas
-	$sidebar.= addLink("Página Principal","");
+	$sidebar.= addLink("Página Principal","https://katedocs.leagueofdevs.com.br/");
 	$sidebar.= addLink("Segurança","/security");
 	$sidebar.= addLink("Tratamento de Erros","/errors");
 	$sidebar.= addLink("Suporte","/support");
