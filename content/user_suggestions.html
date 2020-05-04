@@ -1,0 +1,64 @@
+
+<div class="title">
+	/user/suggestions
+</div>
+<hr/>
+<div class="classifications">
+	<div class="badge orange">
+		POST
+	</div>
+	<div class="hd">
+	</div>
+	<div class="badge blue">
+		TOKEN-NEEDED
+	</div>
+</div>
+<div class="block">
+	Retorna uma lista com as sugestões de atributos dada pela kate para determinado produto
+</div>
+
+<!--Entrada-->
+
+<div class="subtitle">
+	Exemplo de Entrada
+</div>
+<hr/>
+<div class="editor">
+{
+	"platform": "mercado_livre",
+	"product": "MLB1511340551"
+}
+</div>
+<div class="block">
+	<div class="badge code">
+		platform:
+	</div>
+	Plataforma do produto
+	<br>
+	<div class="badge code">
+		product:
+	</div>
+	Identificador do produto
+</div>
+<!--Saída-->
+
+<div class="subtitle">
+	Exemplo de Saída
+</div>
+<hr/>
+<div class="editor">
+[
+  {
+    "source": 1,
+    "attribute_name": "cor",
+    "value": "Amarelo Claro",
+    "id": 2
+  }
+]
+</div>
+<div class="block">
+	<div class="badge code">
+		source:
+	</div>
+	Fonte da sugestão. (1 - perguntas de clientes; 2 - descrição do produto)
+</div>

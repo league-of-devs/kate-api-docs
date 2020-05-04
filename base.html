@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>%title%</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/hambuguer.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="icon" href="/img/api_logo.png">
+</head>
+<body>	
+	<div class="header">
+	<div class="hamburger hamburger--arrowturn" id="hamburguertrigger" style="position: absolute; color: white; transform: scale(0.6);">
+	    <div class="hamburger-box">
+	      <div class="hamburger-inner"></div>
+	    </div>
+  	</div>
+		<center>
+			<img src="/img/logo.png" class="logo">&emsp;<b class="api_docs"><b class="api_docs_inner">Api Docs</b></b>
+		</center>
+	</div>
+
+	<div class="side_menu" id="side_menu">
+		%side_menu%
+		<!--
+		<div class="subtitle menu">
+			Páginas
+			<hr/>
+		</div>
+		<div class="side_menu_item">
+			Início
+		</div>
+		<div class="side_menu_item">
+			Início
+		</div>
+		<div class="subtitle menu">
+			Rotas
+			<hr/>
+		</div>
+	-->
+	</div>
+
+	<div class="content">
+		%content%
+		<!--
+		<div class="title">
+			Início
+		</div>
+		<hr/>
+		<div class="classifications">
+			<div class="badge">
+				POST
+			</div>
+			<div class="hd">
+			</div>
+			<div class="badge blue">
+				TOKEN-NEEDED
+			</div>
+		</div>
+		<div class="block">
+			Este sistema é muito legal, use por favor!
+		</div>
+		<div class="subtitle">
+			Entrada
+		</div>
+		<hr/>
+		<div class="editor">
+{
+	"test": "bb"
+}
+		</div>
+		<div class="block">
+			<div class="badge code">
+				status:
+			</div>
+			Teste
+			<br>
+			<div class="badge code">
+				value:
+			</div>
+			Representa o valor
+		</div>
+		<div class="subtitle">
+			Saída
+		</div>
+		<hr/>
+		<div class="editor">
+{
+	"test": "bb"
+}
+		</div>
+		<div class="block">
+			Veja mais em <div class="link" onclick="window.location.href = 'core.html'">core/test</div>
+		</div>
+	-->
+	</div>
+
+
+
+	<div class="background hide" id="background" onclick='
+
+		document.getElementById("hamburguertrigger").classList.toggle("is-active");
+		document.getElementById("side_menu").classList.toggle("open");
+		document.getElementById("background").classList.toggle("hide");
+	'></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js"></script>
+<script type="text/javascript">
+	//Hamburguer menu
+	document.getElementById("hamburguertrigger").addEventListener("click", function() 
+	{
+		this.classList.toggle("is-active");
+		document.getElementById("side_menu").classList.toggle("open");
+		document.getElementById("background").classList.toggle("hide");
+	}, false);
+
+	//Editors
+	var x = document.getElementsByClassName("editor");
+	for(let i = 0; i < x.length; i ++)
+	{
+		x[i].id = "editor_" + i;
+		var editor = ace.edit("editor_" + i,{
+			maxLines: 100,
+	        wrap: true,
+	        autoScrollEditorIntoView: true
+		});
+		editor.getSession().setUseWorker(false);
+		editor.setTheme("ace/theme/monokai");
+		editor.getSession().setMode("ace/mode/json");
+		editor.setReadOnly(true);
+		editor.renderer.setShowGutter(false);
+		editor.setShowPrintMargin(false);
+
+
+
+		/*
+		let id = "editor_" + i;
+	  	setTimeout(function(){
+			const aceEditor = ace.edit(id);
+
+			if(aceEditor.container.classList.value.includes("fixed"))
+				return;
+
+			const newHeight = aceEditor.getSession().getScreenLength() *
+			(aceEditor.renderer.lineHeight + aceEditor.renderer.scrollBar.getWidth());
+			aceEditor.container.style.height = `${newHeight}px`;
+			aceEditor.resize();
+	    },50);
+	    */
+	}
+</script>
+</html>

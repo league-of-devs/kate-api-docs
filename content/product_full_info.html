@@ -1,0 +1,211 @@
+
+<div class="title">
+	/product/full_info
+</div>
+<hr/>
+<div class="classifications">
+	<div class="badge green">
+		GET
+	</div>
+	<div class="hd">
+	</div>
+	<div class="badge blue">
+		TOKEN-NEEDED
+	</div>
+</div>
+<div class="block">
+	Retorna a informação completa de um produto, junto das perguntas, respostas e sugestões da Kate
+</div>
+
+<!--Entrada-->
+
+<div class="subtitle">
+	Exemplo de Entrada
+</div>
+<hr/>
+<div class="editor">
+{
+	"platform": "mercado_livre",
+	"product": "MLB1511340551"
+}
+</div>
+<div class="block">
+	<div class="badge code">
+		platform:
+	</div>
+	Plataforma do produto
+	<br>
+	<div class="badge code">
+		product:
+	</div>
+	Código do produto
+</div>
+
+<!--Saída-->
+
+<div class="subtitle">
+	Exemplo de Saída
+</div>
+<hr/>
+<div class="editor fixed" style="height: 400px">
+{
+  "id": "MLB1511340551",
+  "title": "Produto De Teste - Não Ofertar",
+  "payment": {
+    "price": 15,
+    "base_price": 15,
+    "currency": "BRL",
+    "accepts_mercadopago": true
+  },
+  "pictures": [
+    {
+      "id": "896714-MLB41611013048_052020",
+      "url": "http://mlb-s2-p.mlstatic.com/896714-MLB41611013048_052020-O.jpg",
+      "secure_url": "https://mlb-s2-p.mlstatic.com/896714-MLB41611013048_052020-O.jpg",
+      "size": "500x248",
+      "max_size": "660x328",
+      "quality": ""
+    }
+  ],
+  "attributes": {
+    "Dimensões": "500mm",
+    "Altura": "13 mm",
+    "Marca": "Marca de Testeb",
+    "Condição do item": "Novo",
+    "Modelo": "modelobbg"
+  },
+  "available_quantity": 1,
+  "user_kindness_level": 1,
+  "suggestions": [],
+  "description": "Item de Teste\nAtributo1: Teste\nAtributo2= Teste 3\n(Atributo5) Cor dfirente\nCor da Peça (Amarelo Testbca)\n(aafa): bbbbbaab\nTamanho: 500mm\nMarca: Intel Core I7\n b",
+  "questions": [
+    {
+      "answered_by": 0,
+      "question": "qUAL A COR?",
+      "answer": null,
+      "pattern": null,
+      "created_at": "2020-05-03T23:14:30.000Z",
+      "answered_at": null,
+      "id": 66,
+      "kindness": 0,
+      "kindness_info": {
+        "greetings": false,
+        "bye": false
+      },
+      "delay": -1588547670,
+      "answered": false,
+      "equals_questions": 0,
+      "suggestion": {
+        "source": "7100734270",
+        "name": "cor",
+        "value": null,
+        "id": 4
+      }
+    },
+    {
+      "answered_by": "kate",
+      "question": "qUAL A MARCA?",
+      "answer": "Boa tarde, fugindo do conoravírus, né? O produto em questão apresenta o(a) marca igual a Marca de Testeb",
+      "pattern": null,
+      "created_at": "2020-05-03T23:55:47.000Z",
+      "answered_at": "2020-05-03T23:55:48.000Z",
+      "id": 67,
+      "kindness": 1,
+      "kindness_info": {
+        "greetings": false,
+        "bye": false
+      },
+      "delay": 1,
+      "answered": true,
+      "equals_questions": 0
+    },
+    {
+      "answered_by": "kate",
+      "question": "Qual o modelo do produto?",
+      "answer": "Boa tarde, fugindo do conoravírus, né? O produto em questão apresenta o(a) modelo igual a modelobbg",
+      "pattern": null,
+      "created_at": "2020-05-04T00:02:00.000Z",
+      "answered_at": "2020-05-04T00:02:01.000Z",
+      "id": 68,
+      "kindness": 1,
+      "kindness_info": {
+        "greetings": false,
+        "bye": false
+      },
+      "delay": 1,
+      "answered": true,
+      "equals_questions": 0
+    },
+    {
+      "answered_by": "kate",
+      "question": "Qual o modelo do produto?",
+      "answer": "Boa tarde, o produto em questão apresenta o(a) modelo igual a modelobbg",
+      "pattern": null,
+      "created_at": "2020-05-04T00:03:00.000Z",
+      "answered_at": "2020-05-04T00:03:01.000Z",
+      "id": 69,
+      "kindness": 1,
+      "kindness_info": {
+        "greetings": false,
+        "bye": false
+      },
+      "delay": 1,
+      "answered": true,
+      "equals_questions": 0
+    },
+    {
+      "answered_by": "kate",
+      "question": "Qual o modelo?",
+      "answer": "Boa tarde, tudo bem com você? O produto em questão apresenta o(a) modelo igual a modelobbg",
+      "pattern": "marca",
+      "created_at": "2020-05-04T00:03:47.000Z",
+      "answered_at": "2020-05-04T00:03:48.000Z",
+      "id": 70,
+      "kindness": 1,
+      "kindness_info": {
+        "greetings": false,
+        "bye": false
+      },
+      "delay": 1,
+      "answered": true,
+      "equals_questions": 1
+    },
+    {
+      "answered_by": "kate",
+      "question": "Qual a marca?",
+      "answer": "Boa tarde, o produto em questão apresenta o(a) marca igual a Marca de Testeb",
+      "pattern": "marca",
+      "created_at": "2020-05-04T00:06:09.000Z",
+      "answered_at": "2020-05-04T00:06:12.000Z",
+      "id": 71,
+      "kindness": 1,
+      "kindness_info": {
+        "greetings": false,
+        "bye": false
+      },
+      "delay": 3,
+      "answered": true,
+      "equals_questions": 1
+    }
+  ],
+  "attribute_suggestions": []
+}
+</div>
+
+<!--Pontos importantes-->
+
+<div class="subtitle">
+	Observações
+</div>
+<hr/>
+<div class="block">
+	<div class="badge code">
+		answered_by:
+	</div>
+	Caso o answered_by de uma questão tenha como valor "waiting_confirmation", o sistema está aguardando o usuário responder se deseja aceitar ou não aquela resposta
+	<br>
+	<div class="badge code">
+		kindness/kindness_info:
+	</div>
+	O kindness é um valor que varia de 0 a 1 , representando a "gentileza" da resposta do usuário à partir da avalição da Kate. Já o valor kindess_info representa os itens de gentileza encontrados pela Kate, utilizados para avaliar a gentileza de uma resposta. Com isso, o sistema pode dar dicas para o usuário de como responder melhor seus clientes
+</div>

@@ -1,0 +1,62 @@
+
+<div class="title">
+	/user/suggestion/attribute
+</div>
+<hr/>
+<div class="classifications">
+	<div class="badge orange">
+		POST
+	</div>
+	<div class="hd">
+	</div>
+	<div class="badge blue">
+		TOKEN-NEEDED
+	</div>
+</div>
+<div class="block">
+	Aceita/Nega uma sugestão de atributo dada pela Kate. Caso ela não tenha sugerido um valor, o usuário poderá alterar esse valor, que será enviado pelo atributo "value"
+</div>
+
+<!--Entrada-->
+
+<div class="subtitle">
+	Exemplo de Entrada
+</div>
+<hr/>
+<div class="editor">
+{
+	"suggestion": 1,
+	"value": "13mm",
+	"accept": true
+}
+</div>
+<div class="block">
+	
+	<div class="badge code">
+		suggestion:
+	</div>
+	Identificador da sugestão
+</div>
+
+<!--Saída-->
+
+<div class="subtitle">
+	Exemplo de Saída
+</div>
+<hr/>
+<div class="editor">
+{
+  "status": "success"
+}
+</div>
+<div class="block">
+	<div class="badge code">
+		status:
+	</div>
+	Status de retorno (success/error)
+	<br>
+	<div class="badge code">
+		error:
+	</div>
+	Código do erro (caso exista)
+</div>

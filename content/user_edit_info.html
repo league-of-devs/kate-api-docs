@@ -1,0 +1,60 @@
+
+<div class="title">
+	/user/edit_info
+</div>
+<hr/>
+<div class="classifications">
+	<div class="badge orange">
+		POST
+	</div>
+	<div class="hd">
+	</div>
+	<div class="badge blue">
+		TOKEN-NEEDED
+	</div>
+</div>
+<div class="block">
+	Altera as informações seguras do usuário
+</div>
+
+<!--Entrada-->
+
+<div class="subtitle">
+	Exemplo de Entrada
+</div>
+<hr/>
+<div class="editor">
+{
+  "name": "meunome meusobrenome",
+  "email": "email@email.com",
+  "phone": 0,
+  "settings": {
+    "whatsapp_notifications": true,
+    "kate_auto_send": true,
+		"whatsapp_notification_time": 10
+  }
+}
+</div>
+
+<!--Saída-->
+
+<div class="subtitle">
+	Exemplo de Saída
+</div>
+<hr/>
+<div class="editor">
+{
+  "status": "success"
+}
+</div>
+<div class="block">
+	<div class="badge code">
+		status:
+	</div>
+	Status de retorno (success/error)
+	<br>
+	<div class="badge code">
+		error:
+	</div>
+	Código do erro (caso exista)
+</div>

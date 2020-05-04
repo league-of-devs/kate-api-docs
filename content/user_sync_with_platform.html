@@ -1,0 +1,54 @@
+
+<div class="title">
+	/user/sync_with_platform
+</div>
+<hr/>
+<div class="classifications">
+	<div class="badge orange">
+		POST
+	</div>
+	<div class="hd">
+	</div>
+	<div class="badge blue">
+		TOKEN-NEEDED
+	</div>
+</div>
+<div class="block">
+	Inicia o processo de sincronização com uma plataforma
+</div>
+
+<!--Entrada-->
+
+<div class="subtitle">
+	Exemplo de Entrada
+</div>
+<hr/>
+<div class="editor">
+{
+	"platform": "mercado_livre"
+}
+</div>
+<div class="block">
+	<div class="badge code">
+		platform:
+	</div>
+	Plataforma para sincronização
+</div>
+<!--Saída-->
+
+<div class="subtitle">
+	Exemplo de Saída
+</div>
+<hr/>
+<div class="editor">
+{
+  "status": "success",
+  "link": "http://auth.mercadolivre.com.br/authorization?response_type=code&client_id=KATE_API&redirect_uri=https://test.devdavi.com.br/kate-auth?sync_token=85c90bf7a0d9906d4e56ea60b1801e33501f8590693b49eccd695657387a-mercado_livre"
+}
+</div>
+<div class="block">
+	<div class="badge code">
+		link:
+	</div>
+	Retorna o link que deverá ser aberto para que o usuário sincronize a plataforma
+</div>

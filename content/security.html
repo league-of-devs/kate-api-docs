@@ -1,0 +1,41 @@
+<div class="title">
+	Segurança
+</div>
+<hr/>
+<div class="block">
+	A api da <b>asKate</b> foi desenvolvida pensando na fácil utilização e na escalabilidade, mas principalmente na segurança. Nenhuma informação crítica das plataformas trafega pelas requisições e respostas da api: Tudo é feito por meio de tokens internos da <b>asKate</b>, passado pelo cabeçalho da requisição como argumento "x-token". Existem 3 tokens utilizados dentro na plataforma:
+
+</div>
+<div class="block">
+	<div class="subtitle">
+		Token:
+	</div>
+	<hr/>
+	Regenerado em todo login. É utilizado por padrão pela api em todo seu funcionamento
+	<br>
+	<br>
+	<div class="subtitle">
+		Api Secret Token:
+	</div>
+	<hr/>
+	Token fixo que é trocado pelo usuário quando bem entender, por meio da rota "/user/reset_api_token"
+	<br>
+	<br>
+	<div class="subtitle">
+		Api Access Token:
+	</div>
+	<hr/>
+	Token fixo que é trocado pelo usuário quando bem entender, por meio da rota "/user/reset_api_token"
+	<br>
+	<br>
+	(Tanto <b>api_secret_token</b> quanto <b>api_access_token</b> foram criados para uso de api's futuras)
+</div>
+<br>
+<br>
+<div class="subtitle">
+		Sincronização
+</div>
+<hr/>
+<div class="block">
+		Para garantir a integridade do sistema interno, no momento de sincronização como uma plataforma externa, é gerado um <b>sync_token</b> que é utilizado exclusivamente para a sincronização. Depois deste momento, este token não terá mais utilidade e será excluído do banco de dados.
+</div>
