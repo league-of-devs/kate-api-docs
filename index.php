@@ -51,7 +51,7 @@
 	$sidebar.= addLink("<div class=\"badge orange menu\">POST</div>/question/answer","/question/answer");
 	$sidebar.= addLink("<div class=\"badge green menu\">GET</div>/user/products","/user/products");
 	$sidebar.= addLink("<div class=\"badge green menu\">GET</div>/user/info","/user/info");
-	$sidebar.= addLink("<div class=\"badge orange menu\">POST</div>/user/edit_info","/user/edit_info");
+	$sidebar.= addLink("<div class=\"badge purple menu\">PUT</div>/user/edit_info","/user/edit_info");
 	$sidebar.= addLink("<div class=\"badge orange menu\">POST</div>/user/suggestion/attribute","/user/suggestion/attribute");
 	$sidebar.= addLink("<div class=\"badge green menu\">GET</div>/user/syncs","/user/syncs");
 	$sidebar.= addLink("<div class=\"badge orange menu\">POST</div>/user/suggestions","/user/suggestions");

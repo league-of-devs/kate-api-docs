@@ -197,6 +197,12 @@ body
 		background-color: #75BA24;
 	}
 
+	.badge.purple
+	{
+		background-color: indigo;
+	}
+
+
 	.badge.red
 	{
 		background-color: #F44;
