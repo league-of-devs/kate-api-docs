@@ -1,0 +1,133 @@
+<div class="title">
+	Suporte
+</div>
+<hr/>
+<div class="block">
+	Durante a participação na Hackathon, focamos em desenvolver o sistema com integração com o mercado livre, para que pudéssemos apresentar o sistema com mais funcionalidades. Por isso, estamos trabalhando ainda no suporte de outras plataformas, além de desenvolver mais possibilidades de respostas e adicionar mais suportes a outros atributos.
+</div>
+<div class="subtitle">
+	Atributos Suportados Atualmente
+</div>
+<hr/>
+<div class="block">
+	<table>
+		<tr>
+			<th style="width: 25%">
+				Código do Atributo
+			</th>
+			<th style="width: 75%">
+				Variações de entrada
+			</th>
+		</tr>
+		<tr>
+			<td>
+				&emsp;DIMENSIONS
+			</td>
+			<td>
+				&emsp;Tamanho / Dimensões
+			</td>
+		</tr>
+		<tr>
+			<td>
+				&emsp;COLOR
+			</td>
+			<td>
+				&emsp;Cor / Coloração
+			</td>
+		</tr>
+		<tr>
+			<td>
+				&emsp;BRAND
+			</td>
+			<td>
+				&emsp;Marca / Fabricante
+			</td>
+		</tr>
+		<tr>
+			<td>
+				&emsp;MODEL
+			</td>
+			<td>
+				&emsp;Modelo
+			</td>
+		</tr>
+		<tr>
+			<td>
+				&emsp;WEIGHT
+			</td>
+			<td>
+				&emsp;Peso / Pesado
+			</td>
+		</tr>
+		<tr>
+			<td>
+				&emsp;PRICE
+			</td>
+			<td>
+				&emsp;Preço / Valor / Custo / Quanto custa (Adicionado pelo sistema)
+			</td>
+		</tr>
+		<tr>
+			<td>
+				&emsp;DEPTH
+			</td>
+			<td>
+				&emsp;Profundidade / Comprimento
+			</td>
+		</tr>
+		<tr>
+			<td>
+				&emsp;HEIGHT
+			</td>
+			<td>
+				&emsp;Altura
+			</td>
+		</tr>
+		<tr>
+			<td>
+				&emsp;WIDTH
+			</td>
+			<td>
+				&emsp;Largura
+			</td>
+		</tr>
+	</table>
+	<br>
+</div>
+<div class="subtitle">
+	Mensagens / Respostas
+</div>
+<hr/>
+<div class="block">
+	A Kate seleciona a mensagem que melhor se encaixa para responder o usuário. As mensagens se localizam em um arquivo do servidor, que segue o formato de exemplo abaixo:
+</div>
+<div class="editor">
+{
+	"availability_yes": 
+	[
+		"Olá! Ainda temos {quantidade} unidade{s} disponíve{is} para venda!",
+		"Bom dia! {quantidade} unidade{s} ainda se encontra{m} em nosso estoque!",
+		"Bom dia! {quantidade} unidade{s} ainda se encontra{m} disponíve{is} para venda em nosso estoque!",
+		"Bom dia, tudo bem? {quantidade} unidade{s} ainda se encontra{m} em nosso estoque!",
+		"Bom dia, tudo bem? {quantidade} unidade{s} ainda se encontra{m} disponíve{is} para venda em nosso estoque!"
+	],
+	"availability_no": 
+	[
+		"Olá, obrigado por perguntar! Infelizmente não temos mais unidades disponíveis, mas você pode olhar outros produtos da nossa loja para ver se interessa em algum!",
+		"Bom dia, infelizmente não. Mas recomendamos que dê uma olhada nos outros produtos da nossa loja. Tenha um bom dia!"
+	],
+	"generic_attribute":
+	[
+		"Boa tarde, o produto em questão apresenta o(a) {label} igual a {value}",
+		"Boa tarde, tudo bem com você? O produto em questão apresenta o(a) {label} igual a {value}",
+		"Boa tarde! O produto em questão apresenta o(a) {label} igual a {value}"
+		
+	],
+	"attribute_BRAND":
+	[
+		"Boa tarde! O produto em questão apresenta a marca {value}!",
+		"Boa tarde! O produto é da marca {value}! obrigado por perguntar!",
+		"Bom dia! O produto em questão é da empresa {value}!"
+	]
+}
+</div>

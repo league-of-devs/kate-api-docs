@@ -3,5 +3,30 @@
 </div>
 <hr/>
 <div class="block">
-	Seja bem-vindo a documentação oficial da api da <b>asKate</b>!
+	A api foi desenvolvida pensando em oferecer a melhor forma de tratamento de erro para o desenvolvimento de api's futuras. Por isso, toda ação realizada sempre retornará o status (success/error) além de retornar o status 200(success/OK) ou 400(error).
+</div>
+<div class="subtitle">
+	Exemplo de Sucesso
+</div>
+<hr/>
+<div class="editor">
+{
+	"status": "success"
+}
+</div>
+<div class="subtitle">
+	Exemplo de Erro
+</div>
+<hr/>
+<div class="editor">
+{
+	"status": "error"
+	"error": "invalid_token"
+}
+</div>
+<div class="block">
+	<div class="badge code">
+		error:
+	</div>
+	Código do erro
 </div>

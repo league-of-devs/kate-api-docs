@@ -39,7 +39,8 @@
 	//Páginas
 	$sidebar.= addLink("Página Principal","/index");
 	$sidebar.= addLink("Segurança","/security");
-	$sidebar.= addLink("Tratamento de Erro","/errors");
+	$sidebar.= addLink("Tratamento de Erros","/errors");
+	$sidebar.= addLink("Suporte","/support");
 	
 	$sidebar .= '<div class="subtitle menu">Rotas<hr/></div>';
 
