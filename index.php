@@ -37,7 +37,7 @@
 	}
 
 	//Páginas
-	$sidebar.= addLink("Página Principal","/index");
+	$sidebar.= addLink("Página Principal","");
 	$sidebar.= addLink("Segurança","/security");
 	$sidebar.= addLink("Tratamento de Erros","/errors");
 	$sidebar.= addLink("Suporte","/support");
